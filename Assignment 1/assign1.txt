@@ -1,0 +1,91 @@
+Christopher Zealand Miller
+
+Assignment 1
+
+
+1) 
+slowest -> fastest
+ 
+ 1
+ n^(1/lg(n))
+ sqrt(lg(n))
+ lg*(n)
+ n^lg(lg(n))
+ 2^(sqrt(2*lg(n)))
+ sqrt(2)^(lg(n))
+ 2^lg(n)
+ 2^(lg*(n))
+ 4^lg(n)
+ (lg(n))^2
+ (lg(n))^(lg(n))
+ (lg(n))!
+ lg*(lg(n))
+ lg(lg*(n))
+ lg(n!)
+ n*lg(n)
+ ln(ln(n))
+ ln(n)
+ n
+ (3/2)^n
+ n^2
+ 2^n
+ n^3
+ n2^n
+ e^n    n!
+ (n+1)!
+ 2^2^n
+ 2^2^(n+1)
+ 
+2)
+slowest -> fastest  provided all constants are positave numbers
+
+  kroot(x)
+  logb(x)
+  x^c
+  a^x
+  
+  
+3)
+  The limit as n apporches infinity of n/n^2 = 1/n = 0 so therefore n = O(n^2)
+
+4)
+  a)  ln(n)-ln(1)/log(n) = ln(n)/log(n) - ln(1)/log(n) = constant(2.303) - 0/infinity(zero) = a constant therefore Hn E O(log(n))
+  
+  b)  ln(n+1)-ln(2)/lon(n) = ln(n+1)/log(n) - ln(2)/log(n) = infinity - zero = infinity. therefore Hn E omega(log(n))
+  
+
+5)
+  iSort([4,1,3,2])
+  i(4,isort([1,3,2]))
+  i(4,i(1,isort([3,2])))
+  i(4,i(1,i(3,isort([2]))))
+  i(4,i(1,i(3,i(2,isort([])))))
+  i(4,i(1,i(3,I(2,[]))))
+  i(4,i(1,I(3[2]))))
+  i(4,i(1,2::I(3,[])))
+  i(4,i(1,2::[3]))
+  i(4,I(1,[2,3]))
+  i(4,[1,2,3])
+  1::I(4,[2,3])
+  1::2::I(4,[3])
+  1::2::3::[4]
+  [1,2,3,4]
+  
+6) got slow between 40-50
+
+7)
+a)  if n>1 then f(n;a,b)=f(n-1;a,b)+f(n-2;a,b)
+basis n =2
+f(2;a,b)=f(2-1:a,b) + f(2-2;a,b)
+f(2-1;b,a+b) = a + b
+f(1;b,a+b) = a + b
+a + b = a + b they are equivelent equations
+
+b)  Fn=f(n;0,1)
+basis n =2
+f(2;0,1)=f(2-1:0,1) + f(2-2;0,1)
+f(2-1;1,0+1) = 0 + 1
+f(1;1,1) = 1
+1 = 1
+
+8) no it is not slow however numbers over 50 are negative.
